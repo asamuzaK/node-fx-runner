@@ -52,6 +52,7 @@ describe("fx-runner start", function () {
         expect(stderr).to.not.be.ok;
         expect(stdout).to.contain("-test");
         expect(stdout).to.contain("testArg");
+        expect(stdout).to.not.contain("-test testArg");
         expect(stdout).to.not.contain("--binary-args");
         expect(stdout).to.not.contain("--profile");
         expect(stdout).to.not.contain("--P");
