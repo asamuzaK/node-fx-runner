@@ -13,7 +13,7 @@ var exec = utils.exec;
 var isWindows = /^win/.test(process.platform);
 var normalizeBinary = require("../../lib/utils").normalizeBinary;
 var cp = require("child_process");
-var concatBinArgs = require("../../lin/run").concatBinArgs;
+var concatBinArgs = require("../../lib/run").concatBinArgs;
 
 var fakeBinary = path.join(__dirname, "..", "utils", "dummybinary" +
   (isWindows ? ".bat" : ".sh"));
